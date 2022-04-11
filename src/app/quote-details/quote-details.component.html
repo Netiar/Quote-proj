@@ -1,9 +1,7 @@
-<div class="vote" >
-     <p> <i class="fa-solid fa-thumbs-up "(click)='upvote()'  style="background-color: #2f7b91;"> &nbsp;{{quote.upvote}}</i></p>
-    <p><i class="fa-solid fa-thumbs-down " (click)='downvote()' style="background-color:  #2f7b91;"> &nbsp;{{quote.downvote}} </i></p>
-    <p><i class="fa-solid fa-trash" (click)= 'quoteDelete(true)'></i></p> 
-
-  
+<div class="voting-details">
+     <span><i class="fa-solid fa-thumbs-up "(click)='upvote()'  style="background-color: #000;"> &nbsp;{{quote.upvote}}</i></span>
+     <span><i class="fa-solid fa-thumbs-down " (click)='downvote()' style="background-color:  #000;"> &nbsp;{{quote.downvote}} </i></span>
+     <span><i class="fa-solid fa-trash" (click)= 'quoteDelete(true)'></i></span>  
     
 </div>
 

@@ -9,10 +9,10 @@ import {Quote} from "../quote"
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[]=[
-    new Quote( 1, 'Technology is best when it brings people together.',' — Matt Mullenweg,',0,0,new Date(2022,4,10)),
-    new Quote(2, 'It has become appallingly obvious that our technology has exceeded our humanity.',' — Albert Einstein, Scientist', 0,0,new Date(2022,4,10)),
-    new Quote(3,'Heroes share all their meat, but a pirate eats all the meat.','— Monkey D. Luffy',0,0,new Date(2022,4,10)),
-    new Quote(4,'It is only when they go wrong that machines remind you how powerful they are.','—  Clive James,',0,0,new Date(2022,4,10))
+    new Quote( 1, ' "Technology is best when it brings people together." ',' — Matt Mullenweg, Entrepreneur.',0,0,new Date(2012,4,10)),
+    new Quote(2, '"It has become appallingly obvious that our technology has exceeded our humanity."',' — Albert Einstein, Scientist.', 0,0,new Date(2012,4,10)),
+    new Quote(3,'"Heroes share all their meat, but a pirate eats all the meat."','— Monkey D. Luffy, pirate.',0,0,new Date(2012,4,10)),
+    new Quote(4,'"It is only when they go wrong that machines remind you how powerful they are."','—  Clive James, Broadcaster.',0,0,new Date(2012,4,10))
   
   ]
   
