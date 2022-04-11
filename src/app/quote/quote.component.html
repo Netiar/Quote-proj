@@ -1,1 +1,33 @@
-<p>quote works!</p>
+<div class="container">
+    <h1>Quotes</h1>
+    <hr>
+  
+    <div class="row">
+      <div class="col-md-6">
+        <div *ngFor= 'let quote of quotes;let i = index'>
+          <div *ngIf= "quote.upvote==highest && quote.upvote>0; then highlight else leave"></div>
+          <ng-template #highlight>
+            <h6 appHighlight>{{quote.name}} <span>Upvote:{{quote.upvote}} </span>    <span>Downvote:{{quote.downvote}}</span></h6>
+          </ng-template>
+          <ng-template #leave>
+            <h6 >{{quote.name}} <span><i class='bx bxs-like bx-xs'></i>{{quote.upvote}} </span> <span><i class='bx bxs-like bx-flip-vertical '></i>:{{quote.downvote}}</span></h6>
+          </ng-template>
+         
+        
+          
+          <div>
+            <button (click)='toggleDetails(i)' class="btn btn-secondary mb-3">Click to view Details</button>
+          </div>
+  
+          <div *ngIf= 'quote.showDescription'>
+            <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" >
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+      </div>
+    </div>
+  
+    <p *ngIf= 'quotes.length > 7'>You have too many goals</p>
+  </div>
