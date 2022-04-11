@@ -3,7 +3,7 @@
     <div class="column1">
       
         <ul *ngFor = 'let quote of quotes let i = index'>
-            <i class="fa-solid fa-quote-left  fa-2x" style="background-color: #8e989b;padding-left: -5vw;"></i>
+            <i class="fa-solid fa-quote-left  fa-2x" style="background-color: #000;padding-left: -5vw;"></i>
             <li appHighlight *ngIf="highest()===quote.upvote && quote.upvote>0">
                  {{quote.quote}} <span style="float: right;">{{quote.details}} </span>
             </li>
@@ -11,84 +11,55 @@
                  {{quote.quote}}<span style="float: right;">{{quote.details}} </span>
             </li>
             <li id="list"*ngIf='quote.completeDate'>{{quote.completeDate|date}} <br> Posted: {{quote.completeDate|dateCount}}</li>  
-             <i class="fa-solid fa-quote-right  fa-2x" style="background-color: #2f7b91;"></i>
+             <i class="fa-solid fa-quote-right  fa-2x" style="background-color: #000;"></i>
              <app-quote-detail *ngIf='quote.details' [quote]='quote'(isComplete) = 'deleteQuote($event,i)' ></app-quote-detail>
           </ul>
     </div>
     <div class="column2">
- <h2>Form</h2>
+ <h2>Quote</h2>
  <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
     </div>
 </div>
  <div class="footer">
-    <p>Quote-Generator  copyright &copy; 2022| All Rights
-        Reserved</p> 
- </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--<div class="container">
-    <h1>Quotes</h1>
-    <hr>
+    <p>QuotesProj</p>
+    <p>Copyright &copy; 2022</p>
+  </div>
   
-    <div class="row">
-      <div class="col-md-6">
-        <div *ngFor= 'let quote of quotes;let i = index'>
-          <div *ngIf= "quote.upvote==highest && quote.upvote>0; then highlight else leave"></div>
-          <ng-template #highlight>
-            <h6 appHighlight>{{quote.name}} <span>Upvote:{{quote.upvote}} </span>    <span>Downvote:{{quote.downvote}}</span></h6>
-          </ng-template>
-          <ng-template #leave>
-            <h6 >{{quote.name}} <span><i class='bx bxs-like bx-xs'></i>{{quote.upvote}} </span> <span><i class='bx bxs-like bx-flip-vertical '></i>:{{quote.downvote}}</span></h6>
-          </ng-template>
-         
-        
-          
-          <div>
-            <button (click)='toggleDetails(i)' class="btn btn-secondary mb-3">Click to view Details</button>
-          </div>
+ 
   
-          <div *ngIf= 'quote.showDescription'>
-            <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6" >
-        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-      </div>
-    </div>
-  
-    <p *ngIf= 'quotes.length > 7'>You have too many goals</p>
-  </div>-->
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
