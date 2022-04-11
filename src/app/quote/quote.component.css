@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+    margin-top: -10%;
+    background-color: #ececf0;
+    position: absolute;
+    display: inline-block;
+    padding: 2% 5%; 
+    margin-left: 30%;
+    font-size: 2vw;
+    color: #2f7b91;
+    font-weight: bolder;
+}
