@@ -3,7 +3,7 @@
     <div class="column1">
       
         <ul *ngFor = 'let quote of quotes let i = index'>
-            <i class="fa-solid fa-quote-left  fa-2x" style="background-color: #2f7b91;padding-left: -5vw;"></i>
+            <i class="fa-solid fa-quote-left  fa-2x" style="background-color: #8e989b;padding-left: -5vw;"></i>
             <li appHighlight *ngIf="highest()===quote.upvote && quote.upvote>0">
                  {{quote.quote}} <span style="float: right;">{{quote.details}} </span>
             </li>
