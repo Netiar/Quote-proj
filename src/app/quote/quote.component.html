@@ -1,4 +1,65 @@
-<div class="container">
+<h1>Quote Generator</h1>
+<div class="row">
+    <div class="column1">
+      
+        <ul *ngFor = 'let quote of quotes let i = index'>
+            <i class="fa-solid fa-quote-left  fa-2x" style="background-color: #2f7b91;padding-left: -5vw;"></i>
+            <li appHighlight *ngIf="highest()===quote.upvote && quote.upvote>0">
+                 {{quote.quote}} <span style="float: right;">{{quote.details}} </span>
+            </li>
+            <li  *ngIf="highest()!==quote.upvote || quote.upvote===0">
+                 {{quote.quote}}<span style="float: right;">{{quote.details}} </span>
+            </li>
+            <li id="list"*ngIf='quote.completeDate'>{{quote.completeDate|date}} <br> Posted: {{quote.completeDate|dateCount}}</li>  
+             <i class="fa-solid fa-quote-right  fa-2x" style="background-color: #2f7b91;"></i>
+             <app-quote-detail *ngIf='quote.details' [quote]='quote'(isComplete) = 'deleteQuote($event,i)' ></app-quote-detail>
+          </ul>
+    </div>
+    <div class="column2">
+ <h2>Form</h2>
+ <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+</div>
+ <div class="footer">
+    <p>Quote-Generator  copyright &copy; 2022| All Rights
+        Reserved</p> 
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="container">
     <h1>Quotes</h1>
     <hr>
   
@@ -30,4 +91,4 @@
     </div>
   
     <p *ngIf= 'quotes.length > 7'>You have too many goals</p>
-  </div>
+  </div>-->
