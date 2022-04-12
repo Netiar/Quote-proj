@@ -1,27 +1,39 @@
-# QuotesProj
+# Quotes PROJ
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+##### By Collins Netia Odinga
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Description .
+<p>An application where users can create quotes and have<br> those quotes voted on whether they are terrible or are inspirational.</p>
 
-## Code scaffolding
+Go Back to the top
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Design .
+ *figma
 
-## Build
+ Go Back to the top
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Tech used .
 
-## Running unit tests
+*HTML - This was used for structuring the page.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+*CSS - This was used for styling the page.
 
-## Running end-to-end tests
+*Angular CLI - Application design framework and development platform for single page applications
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Go Back to the top
 
-## Further help
+Licence
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Go Back to the top
+
+### Authors Info .
+
+
+Email - collimow54@gmail.com
+Go Back to the top
+
+About
+An application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.
+
+
